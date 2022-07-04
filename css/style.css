@@ -1,0 +1,17 @@
+/*** Initial CSS ***/
+body{
+    margin: 0;
+    padding: 0;
+}
+/*** Header Section ***/
+.flex-container{
+    display: flex;
+}
+.half-width{
+    width:50%;
+    background-color: red;
+}
+.half-width img{
+    width: 100%;
+    margin: 100px;
+}
