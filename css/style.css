@@ -1,17 +1,79 @@
 /*** Initial CSS ***/
-body{
+body {
     margin: 0;
     padding: 0;
 }
+
+. {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 1242px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+}
+
+.orange {
+    color: #ffa500;
+}
+
 /*** Header Section ***/
-.flex-container{
+.header {
+    background-color: #ffffff;
+
+}
+
+header {
     display: flex;
+    align-items: center;
+    height: 100vh;
 }
-.half-width{
-    width:50%;
-    background-color: red;
+
+.header-left {
+    width: 50%;
 }
-.half-width img{
+
+.header p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: -0.02em;
+    color: #828282;
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    display: inline-block;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 24px 32px;
+    background: linear-gradient(88.33deg, #FC8F49 -7.64%, #FF1E1E 145.94%);
+    box-shadow: 0px 2px 30px rgba(252, 143, 73, 0.5);
+    border-radius: 100px;
+    transition: 300ms;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+}
+
+.header-right {
+    width: 50%;
+}
+
+.header-right img {
     width: 100%;
-    margin: 100px;
 }
