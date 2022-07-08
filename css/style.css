@@ -34,6 +34,7 @@ h1 {
 header {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     height: 100vh;
 }
 
@@ -72,8 +73,38 @@ header {
 
 .header-right {
     width: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+.header-right::after {
+    position: absolute;
+    content: '';
+    left: 52px;
+    bottom: -17px;
+    width: 90%;
+    height: 90%;
+    background: url(../images/shapes/group8450.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+    transition: 400ms;
+
+}
+
+.header-right:hover::after {
+    left: -5px;
+    bottom: 10px;
 }
 
 .header-right img {
-    width: 100%;
+    width: 90%;
+    transition: 300ms;
+    position: relative;
+    z-index: 3;
+}
+
+.header-right img:hover {
+    transform: scale(110%);
 }
